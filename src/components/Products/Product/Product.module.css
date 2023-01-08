@@ -1,0 +1,96 @@
+.product {
+  width: 80%;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: .8rem;
+  /* flex-wrap: wrap; */
+  padding: 1rem 2rem;
+}
+
+.product__image {
+  width: 25rem;
+  object-fit: contain;
+  border-radius: 10px;
+  max-height: 20rem;
+}
+
+.product__details {
+  padding: 1rem;
+  display: flex;
+  /* align-items: start; */
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.product__details p:nth-child(1) {
+  cursor: pointer;
+}
+
+.details__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.details__desc {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+}
+
+.details__price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.product__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.buttons__btn {
+  width: auto;
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.buttons__btn:nth-child(2) {
+  padding: 0.5rem 1.5rem;
+}
+
+
+.buttons__btn:hover {
+  opacity: 0.7;
+}
+
+.buttons__view {
+  background: var(--light-color);
+  color: var(--secondary-color);
+}
+
+.buttons__add {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 680px) {
+  .product {
+    width: 86%;
+  }
+
+  .product__image {
+    width: 20rem;
+  }
+}
